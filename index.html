@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <!-- Nastavení kódování dokumentu -->
+    <meta charset="UTF-8" />
+    <!-- Nastavení zobrazení pro různá zařízení -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Připojení k Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Styl písma pro stránku -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Připojení externího CSS souboru -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Nastavení titulku stránky -->
+    <title>Produktová karta</title>
+  </head>
+  <body>
+    <div class="product-card">
+      <!-- Označení ikonického modelu -->
+      <div class="badge iconic-badge">Ikonický model</div>
+      <!-- Slevová značka -->
+      <div class="badge discount-badge">-20%</div>
+      <div class="product-image-container">
+        <div class="slider">
+          <img
+            src="images/Jordan-1-low-sky-j-purple.png"
+            alt="Product image"
+            class="slide active"
+          />
+          <img
+            src="images/Jordan-1-low-sky-j-purple1.png"
+            alt="Product image"
+            class="slide"
+          />
+          <img
+            src="images/Jordan-1-low-sky-j-purple2.png"
+            alt="Product image"
+            class="slide"
+          />
+          <img
+            src="images/Jordan-1-low-sky-j-purple3.png"
+            alt="Product image"
+            class="slide"
+          />
+        </div>
+        <!-- Ovládací prvky pro slider -->
+        <div class="controls">
+          <!-- Tlačítko pro předchozí obrázek -->
+          <div class="prev" onclick="moveSlide(-1)">&#10094;</div>
+          <!-- Tlačítko pro následující obrázek -->
+          <div class="next" onclick="moveSlide(1)">&#10095;</div>
+        </div>
+      </div>
+      <div class="product-info-container">
+        <!-- Název produktu -->
+        <h1 class="product-title">Jordan 1 Low Sky J Purple</h1>
+        <!-- Popis produktu -->
+        <p class="product-description">
+          Jordan 1 Low je silueta vycházející z původní verze Jordan 1 High,
+          kterou navrhl designér Peter Moore. Hlavní myšlenkou bylo vytvořit
+          odlehčenou verzi pro běžné nošení mimo basketbalová hřiště. Dodnes se
+          vyrábí v mnoha barevných provedeních a je jedním z nejpopulárnějších
+          modelů mezi teniskovými nadšenci.
+        </p>
+      </div>
+      <div class="product-details-container">
+        <!-- Značka pro dopravu zdarma -->
+        <span class="label product-shipping-label">Doprava zdarma</span>
+        <!-- Značka pro skladové množství produktu -->
+        <span class="label product-stock-label">Poslední 4 kusy skladem</span>
+      </div>
+      <div class="price-label-container">
+        <!-- Značka pro cenu produktu -->
+        <span class="label product-price-label">Cena produktu</span>
+      </div>
+      <div class="price-container">
+        <!-- Běžná cena produktu -->
+        <span class="product-price">6 000 000 Kč</span>
+        <!-- Slevová cena produktu -->
+        <span class="product-discount-price">4 800 000 Kč</span>
+      </div>
+      <!-- Tlačítko pro přidání do košíku -->
+      <div class="button add-to-cart-button">Koupit hned</div>
+    </div>
+    <!-- Připojení externího JavaScriptového souboru -->
+    <script src="script.js"></script>
+  </body>
+</html>
